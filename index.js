@@ -14,7 +14,7 @@ app.use('/api', router);
 
 // Specify public page entry point
 app.get('/', function(req, res) {
-    res.sendFile(path.join('/index.html'))
+    res.sendFile(path.join('index.html'))
 });
 
 // Serve backend routes
@@ -26,6 +26,7 @@ app.get('/api', function(req, res) {
 const port = process.env.PORT || 8080;
 
 // Start the app
+
 app.listen(port, () => {
   console.log('App started on port: ' + port);
 });
